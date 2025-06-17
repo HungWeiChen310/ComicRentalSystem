@@ -53,7 +53,7 @@ B11170047陳家龢
 *   **框架/平台：** .NET Windows Forms
 *   **資料儲存：**
     *   使用 SQLite 資料庫 (`comic_rental.db`) 儲存所有應用程式資料，包括漫畫、會員和使用者帳號。
-    *   資料庫檔案位於使用者 `%APPDATA%` 目錄下的 `ComicRentalApp` 資料夾內 (例如：`C:\Users\YourUsername\AppData\Roaming\ComicRentalApp\comic_rental.db`)。
+    *   資料庫檔案位於應用程式根目錄中的 `comic_rental.db`。
     *   本專案使用 Entity Framework Core 作為 ORM (Object-Relational Mapper) 來進行資料庫操作。
 *   **日誌記錄：**
     *   日誌檔案儲存在使用者「我的文件」資料夾內的 `ComicRentalApp\Logs` 目錄下 (例如：`C:\Users\YourUsername\Documents\ComicRentalApp\Logs`)。
@@ -95,7 +95,7 @@ B11170047陳家龢
 4.  **資料與日誌檔案路徑說明：**
     *   **資料庫檔案**：
         *   `comic_rental.db`：包含所有應用程式資料 (漫畫、會員、使用者帳號等)。
-        *   此檔案位於使用者 `%APPDATA%\ComicRentalApp` 目錄下 (例如：`C:\Users\YourUsername\AppData\Roaming\ComicRentalApp\comic_rental.db`)。
+        *   此檔案位於應用程式根目錄中。
         *   亦可透過環境變數 `COMIC_DB_PATH` 指定其他資料庫檔案路徑。
         *   如果此資料庫檔案在應用程式首次執行時不存在，系統將會自動建立它。
     *   **日誌檔案目錄**：
